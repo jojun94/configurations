@@ -1,0 +1,16 @@
+[alias]
+        s = status
+        st = status -s
+        rb = rebase -i
+        co = checkout
+        br = branch
+        df = diff
+        dc = diff --cached
+        history = log --pretty=oneline
+        lg = log --graph --decorate --pretty='format:%C(auto)%h %d %s %C(green)%an%C(bold blue) %ad' --abbrev-commit --all --date=relative
+        last = log -1 HEAD --stat
+        unstage = "reset HEAD -- "
+        undo = reset HEAD~1
+        ps = !git push origin $(git rev-parse --abbrev-ref HEAD)
+        pl = !git pull origin $(git rev-parse --abbrev-ref HEAD)
+        alias = !git config --get-regexp alias
